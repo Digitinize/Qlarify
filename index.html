@@ -1982,6 +1982,7 @@ nav.scrolled { border-bottom-color: var(--border); }
 
 /* Mobile nav — slide in from right */
 @media (max-width:1024px){
+  nav:has(.nav-links.mobile-open){-webkit-backdrop-filter:none;backdrop-filter:none;}
   .hamburger{display:flex;}
   .nav-links{
     display:flex!important;
