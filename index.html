@@ -90,8 +90,8 @@ nav.scrolled{padding:8px 48px;box-shadow:0 2px 24px var(--shadow);}
 
 .hero-visual{position:relative;z-index:1;overflow:visible;padding:20px 0;}
 .hero-visual-img{border-radius:20px;overflow:hidden;box-shadow:0 24px 72px var(--shadow-lg);}
-.hero-visual-img img,.inner-hero-visual img,.ab-hero-visual img{width:100%;height:auto;display:block;object-fit:cover;border-radius:inherit;}
-.hero-visual-img img{aspect-ratio:560/420;}
+.hero-visual-img img,.hero-visual-img svg,.inner-hero-visual img,.ab-hero-visual img{width:100%;height:auto;display:block;object-fit:cover;border-radius:inherit;}
+.hero-visual-img img,.hero-visual-img svg{aspect-ratio:560/420;}
 .ab-hero-visual img{aspect-ratio:600/380;}
 .so-post-header img{width:100%;height:100%;object-fit:cover;}
 .so-post-header.good-header{position:relative;overflow:hidden;}
@@ -2200,13 +2200,13 @@ nav.scrolled { border-bottom-color: var(--border); }
         </span>
       </div>
       <div class="h1-line-row">
-        <span class="h1-static h1-static-em">More</span>
+        <span class="h1-static h1-static-em">Higher</span>
         <span class="h1-slot-wrap" id="h1-slot2">
           <span class="h1-slot-track" id="h1-track2">
-            <span class="h1-slot-word">Calls</span>
             <span class="h1-slot-word">Conversions</span>
-            <span class="h1-slot-word">Enquiries</span>
             <span class="h1-slot-word">Revenue</span>
+            <span class="h1-slot-word">Referrals</span>
+            <span class="h1-slot-word">Visibility</span>
           </span>
         </span>
       </div>
@@ -2230,7 +2230,110 @@ nav.scrolled { border-bottom-color: var(--border); }
     <p class="hero-note anim">30 minutes · No commitment · Clarity-first conversation</p>
   </div>
   <div class="hero-visual" style="position:relative;z-index:1;">
-    <div class="hero-visual-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&q=90" alt="Marketing analytics dashboard showing campaign performance and growth charts" fetchpriority="high" decoding="sync"></div>
+    <div class="hero-visual-img">
+      <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Healthcare marketing infographic showing enquiry growth, call volume trends, and key performance metrics">
+        <defs>
+          <filter id="card-shadow" x="-10%" y="-10%" width="130%" height="140%">
+            <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(26,74,107,0.12)"/>
+          </filter>
+          <linearGradient id="bar-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1a4a6b"/>
+            <stop offset="100%" stop-color="#2c5f84"/>
+          </linearGradient>
+          <linearGradient id="bar-grad-accent" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f07030"/>
+            <stop offset="100%" stop-color="#d05a18"/>
+          </linearGradient>
+          <linearGradient id="line-grad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#f07030" stop-opacity="0.6"/>
+            <stop offset="50%" stop-color="#f07030"/>
+            <stop offset="100%" stop-color="#d05a18"/>
+          </linearGradient>
+          <linearGradient id="area-fill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f07030" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#f07030" stop-opacity="0.02"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Background -->
+        <rect width="560" height="420" rx="0" fill="#f5f5f5"/>
+
+        <!-- Title (centered, clear of top-left badge zone) -->
+        <text x="280" y="38" font-family="'DM Sans',sans-serif" font-size="15" font-weight="600" fill="#1a4a6b" text-anchor="middle">Monthly Performance</text>
+        <text x="280" y="56" font-family="'DM Sans',sans-serif" font-size="11" fill="#2c5f84" text-anchor="middle">Healthcare Marketing Metrics</text>
+
+        <!-- Subtle grid lines -->
+        <line x1="80" y1="100" x2="480" y2="100" stroke="#c8d8e4" stroke-width="0.5" stroke-dasharray="4,4"/>
+        <line x1="80" y1="155" x2="480" y2="155" stroke="#c8d8e4" stroke-width="0.5" stroke-dasharray="4,4"/>
+        <line x1="80" y1="210" x2="480" y2="210" stroke="#c8d8e4" stroke-width="0.5" stroke-dasharray="4,4"/>
+        <line x1="80" y1="265" x2="480" y2="265" stroke="#c8d8e4" stroke-width="0.5" stroke-dasharray="4,4"/>
+        <line x1="80" y1="320" x2="480" y2="320" stroke="#c8d8e4" stroke-width="0.5"/>
+
+        <!-- Y-axis labels -->
+        <text x="72" y="104" font-family="'DM Sans',sans-serif" font-size="9" fill="#2c5f84" text-anchor="end">500</text>
+        <text x="72" y="159" font-family="'DM Sans',sans-serif" font-size="9" fill="#2c5f84" text-anchor="end">400</text>
+        <text x="72" y="214" font-family="'DM Sans',sans-serif" font-size="9" fill="#2c5f84" text-anchor="end">300</text>
+        <text x="72" y="269" font-family="'DM Sans',sans-serif" font-size="9" fill="#2c5f84" text-anchor="end">200</text>
+        <text x="72" y="324" font-family="'DM Sans',sans-serif" font-size="9" fill="#2c5f84" text-anchor="end">100</text>
+
+        <!-- Axis lines -->
+        <line x1="80" y1="320" x2="480" y2="320" stroke="#c8d8e4" stroke-width="1"/>
+        <line x1="80" y1="100" x2="80" y2="320" stroke="#c8d8e4" stroke-width="1"/>
+
+        <!-- Bars (6 months, ascending, spread across full width) -->
+        <rect x="95" y="242" width="48" height="78" rx="5" fill="url(#bar-grad)" opacity="0.65"/>
+        <rect x="160" y="210" width="48" height="110" rx="5" fill="url(#bar-grad)" opacity="0.72"/>
+        <rect x="225" y="230" width="48" height="90" rx="5" fill="url(#bar-grad)" opacity="0.68"/>
+        <rect x="290" y="175" width="48" height="145" rx="5" fill="url(#bar-grad)" opacity="0.8"/>
+        <rect x="355" y="140" width="48" height="180" rx="5" fill="url(#bar-grad)" opacity="0.88"/>
+        <rect x="420" y="100" width="48" height="220" rx="5" fill="url(#bar-grad-accent)"/>
+
+        <!-- Month labels -->
+        <text x="119" y="340" font-family="'DM Sans',sans-serif" font-size="10" fill="#2c5f84" text-anchor="middle">Jan</text>
+        <text x="184" y="340" font-family="'DM Sans',sans-serif" font-size="10" fill="#2c5f84" text-anchor="middle">Feb</text>
+        <text x="249" y="340" font-family="'DM Sans',sans-serif" font-size="10" fill="#2c5f84" text-anchor="middle">Mar</text>
+        <text x="314" y="340" font-family="'DM Sans',sans-serif" font-size="10" fill="#2c5f84" text-anchor="middle">Apr</text>
+        <text x="379" y="340" font-family="'DM Sans',sans-serif" font-size="10" fill="#2c5f84" text-anchor="middle">May</text>
+        <text x="444" y="340" font-family="'DM Sans',sans-serif" font-size="10" fill="#2c5f84" text-anchor="middle">Jun</text>
+
+        <!-- Area fill under line chart -->
+        <path d="M119,258 C145,245 165,225 184,218 C203,211 228,238 249,230 C270,222 294,195 314,185 C334,175 359,155 379,146 C399,137 424,115 444,108 L444,320 L119,320 Z" fill="url(#area-fill)"/>
+
+        <!-- Line chart overlay (call volume trend) -->
+        <path d="M119,258 C145,245 165,225 184,218 C203,211 228,238 249,230 C270,222 294,195 314,185 C334,175 359,155 379,146 C399,137 424,115 444,108" fill="none" stroke="url(#line-grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Data points on line -->
+        <circle cx="119" cy="258" r="4.5" fill="#d05a18" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="184" cy="218" r="4.5" fill="#d05a18" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="249" cy="230" r="4.5" fill="#d05a18" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="314" cy="185" r="4.5" fill="#d05a18" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="379" cy="146" r="4.5" fill="#d05a18" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="444" cy="108" r="4.5" fill="#d05a18" stroke="#fff" stroke-width="1.5"/>
+
+        <!-- Growth arrow near top bar -->
+        <path d="M452,88 L444,78 L436,88" fill="none" stroke="#8FA68B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="444" y1="78" x2="444" y2="96" stroke="#8FA68B" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- Metric cards (bottom row, centered, clear of bottom-right badge) -->
+        <!-- Card 1 -->
+        <rect x="80" y="358" width="120" height="46" rx="8" fill="#fff" filter="url(#card-shadow)"/>
+        <circle cx="96" cy="376" r="5" fill="#8FA68B"/>
+        <text x="108" y="374" font-family="'DM Sans',sans-serif" font-size="9" fill="#2c5f84">Conversion Rate</text>
+        <text x="108" y="392" font-family="'DM Sans',sans-serif" font-size="15" font-weight="700" fill="#1a4a6b">+42%</text>
+
+        <!-- Card 2 -->
+        <rect x="216" y="358" width="120" height="46" rx="8" fill="#fff" filter="url(#card-shadow)"/>
+        <circle cx="232" cy="376" r="5" fill="#f07030"/>
+        <text x="244" y="374" font-family="'DM Sans',sans-serif" font-size="9" fill="#2c5f84">Call Volume</text>
+        <text x="244" y="392" font-family="'DM Sans',sans-serif" font-size="15" font-weight="700" fill="#1a4a6b">+3.2x</text>
+
+        <!-- Card 3 -->
+        <rect x="345" y="358" width="105" height="46" rx="8" fill="#fff" filter="url(#card-shadow)"/>
+        <circle cx="360" cy="376" r="5" fill="#1a4a6b"/>
+        <text x="372" y="374" font-family="'DM Sans',sans-serif" font-size="9" fill="#2c5f84">Retention</text>
+        <text x="372" y="392" font-family="'DM Sans',sans-serif" font-size="15" font-weight="700" fill="#1a4a6b">92%</text>
+      </svg>
+    </div>
     <div class="hero-stat-float tl">
       <div class="hsf-num" id="sn-hospitals">10+</div>
       <div class="hsf-lbl">Years inside<br>hospital systems</div>
@@ -2270,74 +2373,6 @@ nav.scrolled { border-bottom-color: var(--border); }
     </div>
   </div>
 </div>
-
-<!-- Patient Acquisition Engine Infographic -->
-<section class="pae-section" id="pae-infographic" aria-label="Patient Acquisition Engine">
-  <div class="wrap">
-    <span class="eyebrow anim">How It Works</span>
-    <h2 class="h2 anim" style="text-align:center;">The Patient Acquisition Engine</h2>
-    <p class="pae-subtitle anim">Four stages. Every service maps to exactly one. Together, they move a stranger from first search to loyal patient.</p>
-
-    <div class="pae-funnel" id="pae-funnel">
-
-      <div class="pae-stage" data-stage="0">
-        <div class="pae-card">
-          <span class="pae-icon">🔍</span>
-          <div class="pae-num" data-target="68">0</div>
-          <div class="pae-stage-title">Find You</div>
-          <div class="pae-services">Hospital SEO · Paid Media<br>Google Ads · Content</div>
-          <div class="pae-divider"></div>
-          <div class="pae-stat">% of patients start on Google</div>
-        </div>
-      </div>
-
-      <div class="pae-stage" data-stage="1">
-        <div class="pae-card">
-          <span class="pae-icon">💡</span>
-          <div class="pae-num" data-target="4" data-suffix="x">0</div>
-          <div class="pae-stage-title">Trust You</div>
-          <div class="pae-services">Video Infrastructure<br>Social Media · Reviews</div>
-          <div class="pae-divider"></div>
-          <div class="pae-stat">Higher conversion with video trust</div>
-        </div>
-      </div>
-
-      <div class="pae-stage" data-stage="2">
-        <div class="pae-card">
-          <span class="pae-icon">📞</span>
-          <div class="pae-num" data-target="3" data-prefix="&lt;" data-suffix="min">0</div>
-          <div class="pae-stage-title">Call You</div>
-          <div class="pae-services">OPD Growth · Call Centre<br>Landing Pages · CRO</div>
-          <div class="pae-divider"></div>
-          <div class="pae-stat">Target time from click to enquiry</div>
-        </div>
-      </div>
-
-      <div class="pae-stage" data-stage="3">
-        <div class="pae-card">
-          <span class="pae-icon">🔁</span>
-          <div class="pae-num" data-target="40">0</div>
-          <div class="pae-stage-title">Return to You</div>
-          <div class="pae-services">Email &amp; WhatsApp<br>Loyalty · Re-engagement</div>
-          <div class="pae-divider"></div>
-          <div class="pae-stat">% repeat visit uplift (avg client)</div>
-        </div>
-      </div>
-
-    </div><!-- /pae-funnel -->
-
-    <div class="pae-connector">
-      <div class="pae-bar-track"><div class="pae-bar-fill" id="pae-bar"></div></div>
-      <div class="pae-bar-labels">
-        <span class="pae-bar-label">Awareness</span>
-        <span class="pae-bar-label">Consideration</span>
-        <span class="pae-bar-label">Decision</span>
-        <span class="pae-bar-label">Retention</span>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 <div class="section" style="background:var(--cream);">
   <div class="wrap">
