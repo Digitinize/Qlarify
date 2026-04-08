@@ -1074,6 +1074,12 @@ footer{background:var(--section-alt);border-top:1px solid var(--border);color:va
   /* Nav */
   nav          { padding:14px 24px; -webkit-backdrop-filter:none; backdrop-filter:none; background:rgba(245,245,245,.99); }
 
+  /* Disable scroll animations — filter:blur compositing breaks mobile transitions */
+  .anim, .anim-left, .anim-right, .anim-group, .anim-group > * {
+    opacity:1 !important; transform:none !important; filter:none !important;
+    transition:none !important;
+  }
+
   /* Hero */
   .hero { grid-template-columns:1fr; gap:40px; padding:100px 32px 48px; }
   .hero-visual { display:none; }
